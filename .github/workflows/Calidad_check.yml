@@ -24,9 +24,12 @@ jobs:
     - name: Instalar validadores
       run: |
         npm install -g html-validator-cli css-validator
+
     - name: Validar HTML
       run: |
         html-validator --file=./index.html --verbose
+
     - name: Validar CSS
       run: |
-        css-validator .build/css/base/botones.css
+        css-validator --file=./build/css/base/botones.css
+
