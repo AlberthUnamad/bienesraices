@@ -31,5 +31,5 @@ jobs:
 
     - name: Validar CSS
       run: |
-        css-validator --file=./build/css/base/botones.css
+        css-validator ./build/css/base/botones.css
 
